@@ -1,0 +1,24 @@
+<!--views/question/issuearticle/index.wxml-->
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <view class="btn b2">发布</view>
+  <view class="btn " bindtap="goback">取消</view>
+</view>
+<view class="content">
+  <van-uploader file-list="{{ fileList }}" preview-size="124px;width:220px;" upload-text="上传封面" upload-icon="plus"
+    max-count="1" bind:after-read="afterRead" />
+  <van-cell-group>
+    <van-field value="{{ value }}" type="textarea" placeholder="请填写文章标题" border="{{ true }}" autosize size='large'
+      bind:change="onChange" />
+  </van-cell-group>
+  <view class="midcon">
+    <van-cell-group>
+      <van-field value="{{ mincon }}" type="textarea" placeholder="请填写正文" autosize size="large" border="{{ false }}"
+        bind:change="onChange" disable-default-padding="{{false}}" />
+    </van-cell-group>
+  </view>
+  <van-dropdown-menu active-color="#1989fa">
+    <van-dropdown-item value="{{ value1 }}" bind:change="change" options="{{ option1 }}" />
+    <van-dropdown-item value="{{ value2 }}" bind:change="change2" options="{{ option2 }}" />
+  </van-dropdown-menu>
+</view>

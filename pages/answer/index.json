@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-image": "@vant/weapp/image/index",
+  "van-loading": "@vant/weapp/loading/index"
+  },
+  "onReachBottomDistance":10,
+  "navigationBarTitleText": "问答"
+}

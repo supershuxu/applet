@@ -1,0 +1,48 @@
+.header {
+  height: 104rpx;
+  width: 100%;
+  border-bottom: 2rpx solid #eee;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 12;
+}
+
+.header .logo {
+  height: 100rpx;
+  width: 320rpx;
+  margin: 10rpx 0 0rpx 30rpx;
+}
+
+.sousuo {
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 32rpx
+}
+.content {
+  margin-top: 104rpx;
+  width: 690rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.ad_pic{
+height: 160rpx;
+width: 165px;
+z-index: -1;
+}
+.txt_title{
+  font-weight: 600;
+  position: absolute;
+  width: 330rpx;
+  height: 160rpx;
+  border-radius: 12rpx;
+  line-height: 160rpx;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  top: 0;
+  left: 0;
+  }

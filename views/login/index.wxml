@@ -1,0 +1,50 @@
+<!--views/login/index.wxml-->
+<image src="/images/logo.png" class="pic"></image>
+
+
+<view class="weap" wx:if="{{show}}">
+  <view class="txt">*我们需要获得你的授权,以登录您的账号</view>
+  <button class="btn" bindtap="goback">取消</button>
+  <button class="btn" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+
+  <rich-text nodes="{{data}}"></rich-text>
+</view>
+
+
+<!-- <view class="coat" wx:if="{{flag}}">
+  <button type="primary" class="btn2" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">
+    <image src="/images/weixinlogo.png" class="wxlogo"></image> 微信用户快速登录
+  </button>
+  
+</view> -->
+
+<!-- <view class="txt1">输入手机号码登录/注册</view> -->
+<!-- <view class="phonelogin" wx:if="{{true}}">
+
+  <van-cell-group >
+  <van-field
+    value="{{ sms }}"
+    center
+    clearable
+    placeholder="请输入手机号"
+    border="{{ true }}"
+    use-button-slot
+  >
+    <van-button slot="button" size="small" type="primary"
+      >发送验证码</van-button
+    >
+  </van-field>
+</van-cell-group>
+
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    label="验证码"
+    placeholder="请输入验证码"
+    border="{{ true }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+
+<button type="warn" class="login_btn"> 登录</button>
+</view> -->

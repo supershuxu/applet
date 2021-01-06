@@ -1,0 +1,60 @@
+<!--views/index/school/index.wxml-->
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+<view class="content">
+  <van-search value="{{ value }}" shape="round" input-align="center" bind:change="onChange" placeholder="搜索院校或专业关键词">
+  </van-search>
+
+  <view class="ADleft" bindtap="goranking">中介推荐服务广告</view>
+  <view class="ADright">高中留学项目</view>
+
+  <view class="title">语言学校 <view class="more">更多</view>
+  </view>
+
+  <view class="Language_school_list">
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+  </view>
+  <view class="title">预科项目 
+  </view>
+      <view class="college_item">
+        <image src="/images/school/Index_img_a.png" class="college_pic"></image>
+        <view class="college_name">慕尼黑工业大学</view>
+        <view class="college_desc"> Technische Universität München (TUM)</view>
+      </view>
+      <view class="college_item">
+        <image src="/images/school/Index_img_a.png" class="college_pic"></image>
+        <view class="college_name">慕尼黑工业大学</view>
+        <view class="college_desc"> Technische Universität München (TUM)</view>
+      </view>
+      <view class="college_item">
+        <image src="/images/school/Index_img_a.png" class="college_pic"></image>
+        <view class="college_name">慕尼黑工业大学</view>
+        <view class="college_desc"> Technische Universität München (TUM)</view>
+      </view>
+
+</view>

@@ -1,0 +1,54 @@
+.content {
+  margin-top: 144rpx;
+}
+
+.title {
+  width: 606rpx;
+  margin: 0 auto;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #333333;
+  text-align: center;
+  line-height: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.user_time {
+  margin-left: 146rpx;
+  height: 34rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #666666;
+  text-align: center;
+  display: inline-block;
+
+}
+
+.mark {
+  margin-left: 40rpx;
+  display: inline-block;
+  width: 70rpx;
+  height: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  color: white;
+  font-size: 24rpx;
+  background: #FFB1B1;
+}
+
+.article_con {
+  text-indent: 2em;
+  margin-top: 30rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #333333;
+  letter-spacing: 1rpx;
+  text-align: justify;
+  line-height: 48rpx;
+}
+
+.van-loading {
+  width: 100%;
+  margin-top: 124rpx;
+  height: 100rpx;
+}

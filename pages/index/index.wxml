@@ -1,0 +1,441 @@
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+
+<view class="content">
+
+  <!-- nav列表 -->
+  <view class="nav" bindtap="goschool">
+    <image src="/images/Index_index/index_pic_a.png"></image>
+    <view>院校库</view>
+  </view>
+  <view class="nav" bindtap="goGermanstudy">
+    <image src="/images/Index_index/index_pic_b.png"></image>
+    <view>德语学习</view>
+  </view>
+  <view class="nav" bindtap="goaps">
+    <image src="/images/Index_index/index_pic_c.png"></image>
+    <view>APS审核</view>
+  </view>
+  <view class="nav" bindtap="goactivity" >
+    <image src="/images/Index_index/index_pic_d.png"></image>
+    <view>同城活动</view>
+  </view>
+  <view class="nav" bindtap="goskilbag">
+    <image src="/images/Index_index/index_pic_e.png"></image>
+    <view>留德锦囊</view>
+  </view>
+  <view class="nav" bindtap="gostrategy">
+    <image src="/images/Index_index/index_pic_f.png"></image>
+    <view>攻略</view>
+  </view>
+  <view class="nav" bindtap="goproject">
+    <image src="/images/Index_index/index_pic_g.png"></image>
+    <view>留德项目</view>
+  </view>
+  <view class="nav" bindtap="goshop">
+    <image src="/images/Index_index/index_pic_h.png"></image>
+    <view>社区商城</view>
+  </view>
+  <!-- nav滑块 -->
+  <view class="index_nav_list">
+    <view class="index_nav_list_text_t">每日福利</view>
+    <view class="index_nav_list_text_b"> 福利</view>
+    <image src="/images/Index_index/m_index_a.png" class="index_nav_list_text_pic"></image>
+    <image src="/images/Index_index/m_index_f.png" class="index_nav_list_text_pichot"></image>
+  </view>
+  <view class="index_nav_list">
+    <view class="index_nav_list_text_t">留学规划</view>
+    <view class="index_nav_list_text_b">独家定制</view>
+    <image src="/images/Index_index/m_index_b.png" class="index_nav_list_text_pic"></image>
+
+  </view>
+  <view class="index_nav_list">
+    <view class="index_nav_list_text_t">语言班</view>
+    <view class="index_nav_list_text_b">德之甄选</view>
+    <image src="/images/Index_index/m_index_c.png" class="index_nav_list_text_pic"></image>
+
+  </view>
+  <view class="index_nav_list">
+    <view class="index_nav_list_text_t">中介机构</view>
+    <view class="index_nav_list_text_b">口碑精选</view>
+    <image src="/images/Index_index/m_index_d.png" class="index_nav_list_text_pic"></image>
+
+  </view>
+  <view class="index_nav_list index_nav_list_last">
+    <view class="index_nav_list_text_t">VIP会员</view>
+    <view class="index_nav_list_text_b">尊贵特权</view>
+    <image src="/images/Index_index/m_index_e.png" class="index_nav_list_text_pic"></image>
+  </view>
+
+  <!-- mid广告 -->
+  <view class="AD"></view>
+
+  <!-- maincon -->
+  <view class="vant_tab">
+    <van-tabs active="{{ active }}" bind:change="onChange" title-active-color="rgb(72, 165, 244)" color="transparent"
+      tab-active-class="active_tab_11" ellipsis="false">
+      <van-tab title="热点" name="热点">
+        <view class="tabwrap" wx:for="{{articleList}}" wx:key="id"  bindtap="articleDetail" data-id="{{item.id}}">
+          <view wx:if="{{item.cate==='video'}}">
+            <view class="tabcoat_title">{{item.title}}</view>
+            <image src="{{item.cover}}" class="tabcoat_pic" wx:if="{{item.cover}}"></image>
+            <image src="/images/Index_index/Index_index_six_b.jpg" class="tabcoat_pic" wx:else></image>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+                <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class="tabcon_top" >
+              {{item.title}}
+            </view>
+            <view class="weap">
+              <view class="tabcon_mid">
+                {{item.desc}}
+              </view>
+              <image src="{{item.cover}}" class="tabcon_pic" wx:if="{{item.cover}}"></image>
+            </view>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <van-loading size="50rpx" text-size="35rpx" custom-class="loading" wx:if="{{showloading}}">加载中...</van-loading>
+        <view class="finish" wx:if="{{showfinish}}" >没有更多数据了...</view>
+      </van-tab>
+      <van-tab title="新闻" name="新闻">
+        <view class="tabwrap"  bindtap="articleDetail" data-id="{{item.id}}" wx:for="{{articleList}}" wx:key="id">
+          <view wx:if="{{item.cate==='video'}}">
+            <view class="tabcoat_title">{{item.title}}</view>
+            <image src="{{item.cover}}" class="tabcoat_pic" wx:if="{{item.cover}}"></image>
+            <image src="/images/Index_index/Index_index_six_b.jpg" class="tabcoat_pic" wx:else></image>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class="tabcon_top">
+              {{item.title}}
+            </view>
+            <view class="weap">
+              <view class="tabcon_mid">
+                {{item.desc}}
+              </view>
+              <image src="{{item.cover}}" class="tabcon_pic" wx:if="{{item.cover}}"></image>
+            </view>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <van-loading size="50rpx" text-size="35rpx" wx:if="{{showloading}}">加载中...</van-loading>
+        <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+      </van-tab>
+      <van-tab title="趣闻" name="趣闻">
+        <view class="tabwrap"  bindtap="articleDetail" data-id="{{item.id}}" wx:for="{{articleList}}" wx:key="id">
+          <view wx:if="{{item.cate==='video'}}">
+            <view class="tabcoat_title">{{item.title}}</view>
+            <image src="{{item.cover}}" class="tabcoat_pic" wx:if="{{item.cover}}"></image>
+            <image src="/images/Index_index/Index_index_six_b.jpg" class="tabcoat_pic" wx:else></image>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class="tabcon_top">
+              {{item.title}}
+            </view>
+            <view class="weap">
+              <view class="tabcon_mid">
+                {{item.desc}}
+              </view>
+              <image src="{{item.cover}}" class="tabcon_pic" wx:if="{{item.cover}}"></image>
+            </view>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <van-loading size="50rpx" text-size="35rpx" wx:if="{{showloading}}">加载中...</van-loading>
+        <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+      </van-tab>
+      <van-tab title="德语" name="德语">
+        <view class="tabwrap"  bindtap="articleDetail" data-id="{{item.id}}" wx:for="{{articleList}}" wx:key="id">
+          <view wx:if="{{item.cate==='video'}}">
+            <view class="tabcoat_title">{{item.title}}</view>
+            <image src="{{item.cover}}" class="tabcoat_pic" wx:if="{{item.cover}}"></image>
+            <image src="/images/Index_index/Index_index_six_b.jpg" class="tabcoat_pic" wx:else></image>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class="tabcon_top">
+              {{item.title}}
+            </view>
+            <view class="weap">
+              <view class="tabcon_mid">
+                {{item.desc}}
+              </view>
+              <image src="{{item.cover}}" class="tabcon_pic" wx:if="{{item.cover}}"></image>
+            </view>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <van-loading size="50rpx" text-size="35rpx" wx:if="{{showloading}}">加载中...</van-loading>
+        <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+      </van-tab>
+      <van-tab title="审核" name="审核">
+        <view class="tabwrap"  bindtap="articleDetail" data-id="{{item.id}}" wx:for="{{articleList}}" wx:key="id">
+          <view wx:if="{{item.cate==='video'}}">
+            <view class="tabcoat_title">{{item.title}}</view>
+            <image src="{{item.cover}}" class="tabcoat_pic" wx:if="{{item.cover}}"></image>
+            <image src="/images/Index_index/Index_index_six_b.jpg" class="tabcoat_pic" wx:else></image>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class="tabcon_top">
+              {{item.title}}
+            </view>
+            <view class="weap">
+              <view class="tabcon_mid">
+                {{item.desc}}
+              </view>
+              <image src="{{item.cover}}" class="tabcon_pic" wx:if="{{item.cover}}"></image>
+            </view>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <van-loading size="50rpx" text-size="35rpx" wx:if="{{showloading}}">加载中...</van-loading>
+        <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+      </van-tab>
+      <van-tab title="留学" name="留学">
+        <view class="tabwrap"  bindtap="articleDetail" data-id="{{item.id}}" wx:for="{{articleList}}" wx:key="id">
+          <view wx:if="{{item.cate==='video'}}">
+            <view class="tabcoat_title">{{item.title}}</view>
+            <image src="{{item.cover}}" class="tabcoat_pic" wx:if="{{item.cover}}"></image>
+            <image src="/images/Index_index/Index_index_six_b.jpg" class="tabcoat_pic" wx:else></image>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class="tabcon_top">
+              {{item.title}}
+            </view>
+            <view class="weap">
+              <view class="tabcon_mid">
+                {{item.desc}}
+              </view>
+              <image src="{{item.cover}}" class="tabcon_pic" wx:if="{{item.cover}}"></image>
+            </view>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <van-loading size="50rpx" text-size="35rpx" wx:if="{{showloading}}">加载中...</van-loading>
+        <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+      </van-tab>
+      <van-tab title="生活" name="生活">
+        <view class="tabwrap"  bindtap="articleDetail" data-id="{{item.id}}" wx:for="{{articleList}}" wx:key="id">
+          <view wx:if="{{item.cate==='video'}}">
+            <view class="tabcoat_title">{{item.title}}</view>
+            <image src="{{item.cover}}" class="tabcoat_pic" wx:if="{{item.cover}}"></image>
+            <image src="/images/Index_index/Index_index_six_b.jpg" class="tabcoat_pic" wx:else></image>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class="tabcon_top">
+              {{item.title}}
+            </view>
+            <view class="weap">
+              <view class="tabcon_mid">
+                {{item.desc}}
+              </view>
+              <image src="{{item.cover}}" class="tabcon_pic" wx:if="{{item.cover}}"></image>
+            </view>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <van-loading size="50rpx" text-size="35rpx" wx:if="{{showloading}}">加载中...</van-loading>
+        <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+      </van-tab>
+      <van-tab title="职场" name="职场">
+        <view class="tabwrap"  bindtap="articleDetail" data-id="{{item.id}}" wx:for="{{articleList}}" wx:key="id">
+          <view wx:if="{{item.cate==='video'}}">
+            <view class="tabcoat_title">{{item.title}}</view>
+            <image src="{{item.cover}}" class="tabcoat_pic" wx:if="{{item.cover}}"></image>
+            <image src="/images/Index_index/Index_index_six_b.jpg" class="tabcoat_pic" wx:else></image>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class="tabcon_top">
+              {{item.title}}
+            </view>
+            <view class="weap">
+              <view class="tabcon_mid">
+                {{item.desc}}
+              </view>
+              <image src="{{item.cover}}" class="tabcon_pic" wx:if="{{item.cover}}"></image>
+            </view>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <van-loading size="50rpx" text-size="35rpx" wx:if="{{showloading}}">加载中...</van-loading>
+        <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+      </van-tab>
+      <van-tab title="视频" name="视频">
+        <view class="tabwrap"  bindtap="articleDetail" data-id="{{item.id}}" wx:for="{{articleList}}" wx:key="id">
+          <view wx:if="{{item.cate==='video'}}">
+            <view class="tabcoat_title">{{item.title}}</view>
+            <image src="{{item.cover}}" class="tabcoat_pic" wx:if="{{item.cover}}"></image>
+            <image src="/images/Index_index/Index_index_six_b.jpg" class="tabcoat_pic" wx:else></image>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class="tabcon_top">
+              {{item.title}}
+            </view>
+            <view class="weap">
+              <view class="tabcon_mid">
+                {{item.desc}}
+              </view>
+              <image src="{{item.cover}}" class="tabcon_pic" wx:if="{{item.cover}}"></image>
+            </view>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <van-loading size="50rpx" text-size="35rpx" wx:if="{{showloading}}">加载中...</van-loading>
+        <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+      </van-tab>
+      <van-tab title="其他" name="其他">
+        <view class="tabwrap"  bindtap="articleDetail" data-id="{{item.id}}" wx:for="{{articleList}}" wx:key="id">
+          <view wx:if="{{item.cate==='video'}}">
+            <view class="tabcoat_title">{{item.title}}</view>
+            <image src="{{item.cover}}" class="tabcoat_pic" wx:if="{{item.cover}}"></image>
+            <image src="/images/Index_index/Index_index_six_b.jpg" class="tabcoat_pic" wx:else></image>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class="tabcon_top">
+              {{item.title}}
+            </view>
+            <view class="weap">
+              <view class="tabcon_mid">
+                {{item.desc}}
+              </view>
+              <image src="{{item.cover}}" class="tabcon_pic" wx:if="{{item.cover}}"></image>
+            </view>
+            <view class="tabcon_bot">
+              阅读{{item.look}}.{{item.user}}
+              <view class="tabcon_bot_mark">{{item.ban}}</view>
+              <view catchtap="closelist" id="{{index}}" class="pic_weap tabcon_bot_pic">
+                <image src="/images/error.png" class="tabcon_bot_pic"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <van-loading size="50rpx" text-size="35rpx" wx:if="{{showloading}}">加载中...</van-loading>
+        <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+      </van-tab>
+    </van-tabs>
+  </view>
+</view>

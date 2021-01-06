@@ -1,0 +1,74 @@
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+</view>
+
+<view class="content">
+
+  <view class="userinfo" bindtap="toLogin">
+    <van-image cover width="100rpx" height="100rpx" src="https://liudediy.com/liude/images/pics_modle_46.png" />
+    <view class="name">{{name}}</view>
+    <view class="desc">{{desc}}</view>
+    <view class="myzhuye">个人主页 <image src="/images/mine/jiantou.png" class="userinfo_pic"></image>
+    </view>
+
+
+  </view>
+  <view class="fans" bindtap="toLogin">{{fans}}</view>
+  <view class="fans" bindtap="toLogin">{{fans}}</view>
+  <!-- 中间部分 -->
+  <view class="middle">
+    <view class="middle_item">
+      <view>
+        <van-icon name="star-o" size="20px" />
+      </view>
+      收藏
+    </view>
+    <view class="middle_item">
+      <view>
+        <van-icon name="coupon-o" size="20px" />
+      </view>
+      优惠卷
+    </view>
+    <view class="middle_item">
+      <view>
+        <van-icon name="chat-o" size="20px" />
+      </view>
+      消息
+    </view>
+  </view>
+
+  <!-- 会员 -->
+  <image src="/images/mine/vip.png" class="ad_pic"></image>
+
+  <!-- minecontent -->
+  <view class="conlist" bindtap="toLogin">
+    <image class="conlist_pic" src="/images/mine/6.png"></image>
+    <view class="conlist_txt">订单中心</view>
+    <image src="/images/mine/jiantou.png" class="conlist_pic2"></image>
+  </view>
+  <view class="conlist" bindtap="toLogin">
+    <image class="conlist_pic" src="/images/mine/1.png"></image>
+    <view class="conlist_txt">待评价</view>
+    <image src="/images/mine/jiantou.png" class="conlist_pic2"></image>
+  </view>
+  <view class="conlist ct"  bindtap="toLogin">
+    <image class="conlist_pic" src="/images/mine/2.png"></image>
+    <view class="conlist_txt">我的钱包</view>
+    <image src="/images/mine/jiantou.png" class="conlist_pic2"></image>
+  </view>
+  <view class="conlist" bindtap="toLogin">
+    <image class="conlist_pic" src="/images/mine/4.png"></image>
+    <view class="conlist_txt">账号安全</view>
+    <image src="/images/mine/jiantou.png" class="conlist_pic2"></image>
+  </view>
+  <view class="conlist ct" bindtap="toLogin">
+    <image class="conlist_pic" src="/images/mine/5.png"></image>
+    <view class="conlist_txt">联系客服</view>
+    <image src="/images/mine/jiantou.png" class="conlist_pic2"></image>
+  </view>
+  <view class="conlist" bindtap="toLogin">
+    <image class="conlist_pic" src="/images/mine/3.png"></image>
+    <view class="conlist_txt">关于我们</view>
+    <image src="/images/mine/jiantou.png" class="conlist_pic2"></image>
+  </view>
+</view>

@@ -1,0 +1,80 @@
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+
+<van-loading size="50rpx" text-size="35rpx" wx:if="{{showloading}}">加载中...</van-loading>
+<view class="content" wx:else>
+  <view class="title">{{list.title}}</view>
+  <view class="weap">
+    <view class="{{flag?'con':'con1'}}">
+      {{list.desc}}
+    </view>
+    <view class="opendesc" wx:if="{{showmiaoshu}}" bindtap="opendesc">{{miaoshu}}</view>
+  </view>
+  <view class="tabcon_bot">
+    {{list.username}}.{{list.time}}
+    <view class="tabcon_bot_mark" wx:if="{{list.biaoqian}}">{{list.biaoqian}}</view>
+  </view>
+  <view class="problem bor1">收藏问题</view>
+  <view class="problem" bindtap="huidawenti" data-id="{{list.id}}">回答问题</view>
+  <view wx:if="{{list.pl[0]}}">
+    <view class="userinfo" wx:for="{{list.pl}}" wx:key="id">
+      <van-image round width="72rpx" height="72rpx" src="https://liudediy.com/liude/images/pics_modle_46.png" />
+      <view class="name">{{item.username}}</view>
+      <view class="desction">这家伙很懒,没有简介</view>
+      <view class="article">
+        <view class="article_content">
+          {{item.content}}
+        </view>
+        <view class="article_info">
+          <view class="article_info_pinglun po">
+            0
+            <van-icon name="like-o" />
+          </view>
+          <view class=" article_info_mark po">
+            {{item.child.length}}
+            <van-icon name="comment-o" />
+          </view>
+          <view class="article_info_share po">
+            <van-icon name="share-o" />
+          </view>
+        </view>
+      </view>
+      <van-cell-group>
+        <van-field input-class="inp" value="{{ sms }}" center clearable placeholder="发表评论..." border="{{ false }}"
+          use-button-slot>
+          <van-button slot="button" size="small" custom-style="border:none; color:#999999">发送</van-button>
+        </van-field>
+      </van-cell-group>
+
+
+      <view wx:if="{{item.child[0]}}">
+        <view  wx:for="{{item.child}}" wx:key="id" >
+        <view class="remark_user">
+          <van-image round width="44rpx" height="44rpx" src="https://liudediy.com/liude/images/pics_modle_46.png" />
+          <view class="remark_txt">
+            {{item.username}}
+          </view>
+          <view class="remark_time">{{item.time}}</view>
+        </view>
+        <view class="remark_con">
+          {{item.content}}
+        </view>
+        <view class="article_info">
+          <view class="article_info_pinglun po">
+            0
+            <van-icon name="comment-o" />
+          </view>
+          <view class="article_info_share po">
+            0
+            <van-icon name="like-o" />
+          </view>
+        </view>
+      </view>
+    </view>
+  <view  wx:else class="wu">暂无评论</view>
+    </view>
+  </view>
+  <view wx:else class="wu">暂无回答,快来抢沙发 </view>
+</view>

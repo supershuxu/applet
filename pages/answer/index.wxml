@@ -1,0 +1,66 @@
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <!-- <image class="sousuo" src="/images/sousuo.png"></image> -->
+</view>
+
+<!-- 搜索 -->
+<view class="content">
+  <van-search value="{{ value }}" shape="round" input-align="center" bind:change="onchange" placeholder="搜索问答">
+  </van-search>
+  <van-tabs active="{{ active }}" bind:change="onChange" title-active-color="black" color="transparent" swipeable
+    ellipsis="false" tab-active-class="active_tab_11">
+    <van-tab title="精选问题" name="choice">
+      <view class="article" wx:for="{{questionList}}" wx:key="id" bindtap="answerDetail" data-id="{{item.id}}">
+        <view class="article_title">{{item.title}}</view>
+        <view class="article_content">{{item.mess.content}}</view>
+        <view class="article_info">
+          <van-image custom-class="article_info_pic" round wx:if="{{item.mess.user.avatar}}" width="34rpx"
+            height="34rpx" src="https://liudediy.com/liude/images/pics_modle_46.png" />
+          <van-image custom-class="article_info_pic" round wx:else width="34rpx" height="34rpx"
+            src="https://liudediy.com/liude/images/pics_modle_46.png" />
+          <view class="article_info_name po">{{item.user}} {{item.time}}</view>
+          <view class="article_info_mark po">{{item.ban}}</view>
+          <view class="article_info_pinglun po">0评论</view>
+        </view>
+      </view>
+      <van-loading size="50rpx" text-size="35rpx" custom-class="loading" wx:if="{{showloading}}">加载中...</van-loading>
+      <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+    </van-tab>
+    <van-tab title="最新问答" name="new">
+      <view class="article" wx:for="{{answerlist}}" wx:key="id" bindtap="answerDetail" data-id="{{item.id}}">
+        <view class="article_title">{{item.title}}</view>
+        <view class="article_content">{{item.desc}}
+        </view>
+        <view class="article_info">
+          <van-image custom-class="article_info_pic" round wx:if="{{item.mess.user.avatar}}" width="34rpx"
+            height="34rpx" src="https://liudediy.com/liude/images/pics_modle_46.png" />
+          <van-image custom-class="article_info_pic" round wx:else width="34rpx" height="34rpx"
+            src="https://liudediy.com/liude/images/pics_modle_46.png" />
+          <view class="article_info_name po">{{item.user}} {{item.time}}</view>
+          <view class="article_info_mark po">{{item.ban}}</view>
+          <view class="article_info_pinglun po">{{item.mess.content?1:0}} 回答</view>
+        </view>
+      </view>
+      <van-loading size="50rpx" text-size="35rpx" custom-class="loading" wx:if="{{showloading}}">加载中...</van-loading>
+      <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+    </van-tab>
+    <van-tab title="待回答问题" name="answered">
+      <view class="article" wx:for="{{answerlist}}" wx:key="id" bindtap="answerDetail" data-id="{{item.id}}">
+        <view class="article_title">{{item.title}}</view>
+        <view class="article_content">{{item.desc}}
+        </view>
+        <view class="article_info">
+          <van-image custom-class="article_info_pic" round wx:if="{{item.mess.user.avatar}}" width="34rpx"
+            height="34rpx" src="https://liudediy.com/liude/images/pics_modle_46.png" />
+          <van-image custom-class="article_info_pic" round wx:else width="34rpx" height="34rpx"
+            src="https://liudediy.com/liude/images/pics_modle_46.png" />
+          <view class="article_info_name po">{{item.user}} {{item.time}}</view>
+          <view class="article_info_mark po">{{item.ban}}</view>
+          <view class="article_info_pinglun po" style="color:#3197F9">收藏问题</view>
+        </view>
+      </view>
+      <van-loading size="50rpx" text-size="35rpx" custom-class="loading" wx:if="{{showloading}}">加载中...</van-loading>
+      <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+    </van-tab>
+  </van-tabs>
+</view>

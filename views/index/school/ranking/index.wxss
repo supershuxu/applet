@@ -1,0 +1,88 @@
+view .van-tabs__wrap--scrollable .van-tabs__nav--complete{
+  padding: 0;
+  margin-left: -20rpx;
+}
+
+view .van-dropdown-menu {
+  height: 60rpx;
+  border-top: 1px solid #F7F7F7;
+  margin-bottom: 60rpx;
+}
+
+view .van-dropdown-menu__item {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  height: 60rpx;
+}
+
+view .van-dropdown-menu__title {
+  padding: 0 20rpx 0 0;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #666666;
+  letter-spacing: 0.43px;
+}
+
+view .van-cell {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #666666;
+  letter-spacing: 0.43px;
+  line-height: 60rpx;
+  padding: 0 15px;
+}
+
+.school{
+  width: 100%;
+  position: relative;
+  margin-top: 30rpx;
+
+}
+.school_pic{
+  width: 140rpx;
+  height: 90rpx;
+}
+.school_name{
+  position: absolute;
+  top: 0;
+  left:170rpx ;
+  font-family: PingFangSC-Regular;
+font-size: 14px;
+color: #333333;
+line-height: 40rpx;
+}
+.school_desc{
+  font-family: PingFangSC-Regular;
+font-size: 12px;
+color: #999999;
+line-height: 15px;
+left:170rpx ;
+top: 48rpx;
+position: absolute;
+}
+.school_ranking{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -30rpx;
+  height: 60rpx;
+  width: 80rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-family: 'PingFangSC-Semibold';
+font-size: 16px;
+color: #FFFFFF;
+letter-spacing: 0.57px;
+background: #DDDDDD;
+}
+.one{
+  background: #FF8140 ;
+}
+.two{
+  background: #FFB1B1;
+}
+.three{
+  background: #3197F9;
+}
+
+

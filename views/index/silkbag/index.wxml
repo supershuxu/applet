@@ -1,0 +1,71 @@
+<!--views/index/silkbag/index.wxml-->
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+<view class="content">
+  <van-search value="{{ value }}" shape="round" input-align="center" bind:change="onChange" placeholder="搜索锦囊">
+  </van-search>
+  <view class="wrap">
+    <view data-num="1" class="silkbag_item  {{_num == 1 ? 'active' : ''}}" bindtap="handleNav">
+      <image src="/images/skilbag/5b4462f31bcaf.jpg" class="silkbag_item_pic"></image>
+    </view>
+    <view data-num="2" class="silkbag_item  {{_num == 2 ? 'active' : ''}}" bindtap="handleNav">
+      <image src="/images/skilbag/5b4462f31bcaf.jpg" class="silkbag_item_pic"></image>
+    </view>
+    <view data-num="3" class="silkbag_item  {{_num == 3 ? 'active' : ''}}" bindtap="handleNav">
+      <image src="/images/skilbag/5b4462f31bcaf.jpg" class="silkbag_item_pic"></image>
+    </view>
+  </view>
+
+  <view class="title">德福考试锦囊</view>
+
+  <view class="desc">锦囊简介</view>
+
+  <view class="desc_con">
+    TestDaF(德福)是德语语言考试，是一项用于留学德国的
+    语言测试，德福考试证书被所有德国高校承认。德福考试
+    对象是以赴德留学为目的的外国学习德语者或一般只想证
+    明自己德语语言水平的人。
+    德福考试分别从阅读理解、听力理解、书面表达和口头表
+    达四个方面测试考生的语言水平。等级相当于欧洲共同语
+    言指导框架所规定的B1级至C1级。
+  </view>
+
+  <view class="desc">作者说明</view>
+
+  <view class="writer">
+    <view class="pic_wrap">
+      <image class="writer_pic" src="/images/skilbag/5c3c1002d48c7.jpg"></image>
+    </view>
+    <view class="name">棒棒的</view>
+    <view class="writer_con">
+      留德DIY社区创始人之一，网红大西安土著，双非本科毕业。APS
+      2.7，曾就读于慕尼黑工大德语Umweltplanung und Ingenieuro-
+      ekologie硕士课程多年，常年混迹在欧洲各个国家之间，有感于唯
+      美食与美景不可辜负而导致回国后短短数个月长胖三十斤，从而发
+      誓不瘦二十斤不改头像。
+    </view>
+  </view>
+  <view class="writer">
+    <view class="pic_wrap">
+      <image class="writer_pic" src="/images/skilbag/5c3c1002d48c7.jpg"></image>
+    </view>
+    <view class="name">棒棒的</view>
+    <view class="writer_con">
+      留德DIY社区创始人之一，网红大西安土著，双非本科毕业。APS
+      2.7，曾就读于慕尼黑工大德语Umweltplanung und Ingenieuro-
+      ekologie硕士课程多年，常年混迹在欧洲各个国家之间，有感于唯
+      美食与美景不可辜负而导致回国后短短数个月长胖三十斤，从而发
+      誓不瘦二十斤不改头像。
+    </view>
+  </view>
+  <view class="desc">更新日志</view>
+  <view class="writer_con">2018年10月01日 </view>
+  <view class="desc">备注</view>
+  <view class="writer_con">如果你在使用过程中，发现有误信息或过时信息，请发送 邮件至 jinnang@liudediy.com，社区工作人员会及时核实 信息并进行修订。感谢您的反馈，祝留德顺利! </view>
+</view>
+
+<view class="footer">
+  <view class="down">下载锦囊</view>
+</view>

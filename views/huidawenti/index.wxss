@@ -1,0 +1,39 @@
+/* views/huidawenti/index.wxss */
+
+.title{
+  margin-top: 104rpx;
+  padding: 0 30rpx;
+}
+.content{
+  margin-top: 0;
+}
+.btn{
+position: absolute;
+right: 160rpx;
+  text-align: center;
+  width: 15%;
+  float: right;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-family: PingFangSC-Regular;
+font-size: 14px;
+color: #2C6FCE;
+letter-spacing: 0;
+top: 28rpx;
+
+}
+.b2{
+  background-image: linear-gradient(45deg, #2B69C8 0%, #3197F9 100%);
+border-radius: 12px;
+color: white;
+right:30rpx ;
+}
+.title{
+  font-family: PingFangSC-Medium;
+font-size: 16px;
+color: #333333;
+letter-spacing: 0;
+font-weight: 700;
+padding: 25rpx 30rpx;
+border-bottom: 10rpx solid #EEEEEE ;
+}

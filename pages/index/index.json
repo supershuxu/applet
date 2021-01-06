@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+  "van-loading": "@vant/weapp/loading/index",
+  "van-tab": "@vant/weapp/tab/index",
+  "van-tabs": "@vant/weapp/tabs/index"
+},
+  "onReachBottomDistance":100,
+  "navigationBarTitleText": "首页"
+}

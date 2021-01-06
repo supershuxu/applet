@@ -1,0 +1,37 @@
+.content {
+  padding-top: 50rpx;
+}
+
+.question {
+  background: linear-gradient(46deg, #9b6aff, #b996ff);
+  line-height: 200rpx;
+  text-align: center;
+  width: 200rpx;
+  margin: 15rpx auto;
+  color: white;
+  border-radius: 100rpx;
+}
+
+.article {
+  background: linear-gradient(45deg, #e65b72, #ff7a90);
+  line-height: 200rpx;
+  text-align: center;
+  width: 200rpx;
+  margin: 15rpx auto;
+  color: white;
+  border-radius: 100rpx;
+}
+
+.wrap {
+  border: 10rpx solid rgb(211, 168, 230);
+  text-align: center;
+  height: 230rpx;
+  width: 230rpx;
+  margin: 0 auto;
+  color: white;
+  border-radius: 115rpx;
+}
+.wrap2{
+  border: 10rpx solid rgb(233, 141, 153);
+  margin: 50rpx auto;
+}

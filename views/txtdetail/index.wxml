@@ -1,0 +1,14 @@
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+<van-loading size="50rpx" text-size="35rpx" wx:if="{{showloading}}">加载中...</van-loading>
+<view class="content" wx:else >
+  <view class="title">{{article.data.title}}</view>
+  <view class="weap" >
+  <view class="user_time">{{article.data.user}}   {{article.data.time}}</view>
+  <view class="mark" > {{article.data.ban}} </view></view>
+  <wxparser rich-text="{{article.data.content}}" />
+  <!-- <rich-text nodes="{{article.data.content}}"></rich-text> -->
+  <view class="article_con" >{{article.data.desc}}</view>
+</view>

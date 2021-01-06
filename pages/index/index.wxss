@@ -1,0 +1,196 @@
+.nav {
+  height: 144rpx;
+  width: 25%;
+  text-align: center;
+  padding-top: 40rpx;
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+font-size: 14px;
+color: #333333;
+letter-spacing: 0;
+}
+view .active_tab_11{
+  font-size: 35rpx;
+  font-weight: 800;
+}
+.nav image {
+  height: 70rpx;
+  width: 70rpx;
+  display: inline-block;
+  margin-bottom: 12rpx;
+}
+
+.index_nav_list {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 20rpx;
+  width: 124rpx;
+  height: 120rpx;
+  margin: 40rpx 17rpx 30rpx 0;
+  text-align: center;
+  box-shadow: 0 0 8rpx 0 rgba(0, 0, 0, .1);
+}
+
+.index_nav_list_last {
+  margin-right: 0;
+}
+
+.index_nav_list_text_t {
+  font-size: 28rpx;
+  font-weight: 900;
+  color: #333333;
+}
+
+.index_nav_list_text_b {
+  font-size: 24rpx;
+  line-height: 38rpx;
+  color: #666666;
+}
+
+.index_nav_list_text_pic {
+  height: 24rpx;
+  width: 24rpx;
+  position: absolute;
+  bottom: 0;
+  left: 88rpx;
+}
+
+.index_nav_list_text_pichot {
+  height: 20rpx;
+  width: 40rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* mid广告 */
+.AD {
+  width: 100%;
+  height: 180rpx;
+  background-color: azure;
+  margin-bottom: 10rpx;
+}
+
+/* maincon */
+.van-tabs__wrap {
+  border-bottom: 10rpx solid #f7f7f7;
+}
+
+.van-ellipsis {
+  width: 114rpx;
+}
+
+/* tab内容 */
+.tabwrap {
+  padding-top: 30rpx;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 4rpx solid #f7f7f7
+}
+
+.tabcon_top {
+  font-size: 30rpx;
+  color: #333333;
+  line-height: 42rpx;
+  width: 500rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  margin-bottom: 20rpx;
+}
+
+.tabcon_mid {
+  width: 100%;
+  height: 80rpx;
+  line-height: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #666666;
+  letter-spacing: 1rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+}
+
+.weap {
+  display: flex;
+  height: 80rpx;
+}
+
+.tabcon_pic {
+  /* position: absolute; */
+  width: 250rpx;
+  height: 142rpx;
+  float: right;
+  margin-top: -65rpx;
+}
+
+.tabcon_bot {
+  position: relative;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 74rpx;
+}
+
+.tabcon_bot_mark {
+  display: inline-block;
+  width: 70rpx;
+  height: 34rpx;
+  color: white;
+  background-color: #FFB1B1;
+  position: absolute;
+  top: 20rpx;
+  line-height: 34rpx;
+  text-align: center;
+  left: 465rpx;
+}
+
+.tabcon_bot_pic {
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  top: 13rpx;
+  right: 10rpx;
+}
+.pic_weap{
+  height: 55rpx;
+  width: 55rpx;
+  display: inline-block;
+}
+
+.tabcoat {
+  padding-top: 30rpx
+}
+
+.tabcoat_title {
+  width: 690rpx;
+  line-height: 42rpx;
+  font-size: 15px;
+  color: #333333;
+  margin-bottom: 24rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.tabcoat_pic {
+  width: 690rpx;
+  height: 300rpx;
+}
+
+.van-loading {
+  width: 100%;
+  height: 100rpx;
+}
+
+.finish {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: var(--loading-text-color, #969799);
+  font-size: 17px;
+  text-align: center;
+}

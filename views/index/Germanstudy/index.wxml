@@ -1,0 +1,114 @@
+<!--views/index/school/index.wxml-->
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+<view class="content">
+  <van-search value="{{ value }}" shape="round" input-align="center" bind:change="onChange" placeholder="搜索关键词">
+  </van-search>
+
+  <view class="ADleft" ><image src="/images/school/xinxi.png" class="ad_pic"></image> <view class="txt_title">考场学习</view></view>
+  <view class="ADright"><image src="/images/school/cilun (3).png" class="ad_pic"></image> <view class="txt_title">德语资料</view></view>
+
+  <view class="title">德语活动
+  </view>
+
+  <view class="Language_school_list">
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+  </view>
+
+  <van-tabs active="{{ active }}" bind:change="Change" title-active-color="black" color="transparent"
+    title-inactive-color="#333333" tab-class="tabstyle" tab-active-class="active_tab_11">
+    <van-tab title="德语课程">
+      <view data-num="1" data-name="" class="label_item {{_num == 1 ? 'active' : ''}}" bindtap="handleNav">
+       全部课程
+      </view>
+      <view data-num="2" class="label_item {{_num == 2 ? 'active' : ''}}" bindtap="handleNav">
+        试听课      </view>
+      <view data-num="3" class="label_item {{_num == 3 ? 'active' : ''}}" bindtap="handleNav">
+        线上课
+      </view>
+      <view data-num="4" class="label_item {{_num == 4 ? 'active' : ''}}" bindtap="handleNav">
+        零基础
+      </view>
+      <view data-num="5" class="label_item bot {{_num == 5 ? 'active' : ''}}" bindtap="handleNav">
+        欧标德语
+      </view>
+      <view data-num="6" class="label_item bot {{_num == 6 ? 'active' : ''}}" bindtap="handleNav">
+        德福/DSH备考
+      </view>
+
+      <view class="college_item">
+        <image src="/images/school/Index_img_a.png" class="college_pic"></image>
+        <view class="college_name">慕尼黑工业大学</view>
+        <view class="college_desc"> Technische Universität München (TUM)</view>
+      </view>
+      <view class="college_item">
+        <image src="/images/school/Index_img_a.png" class="college_pic"></image>
+        <view class="college_name">慕尼黑工业大学</view>
+        <view class="college_desc"> Technische Universität München (TUM)</view>
+      </view>
+      <view class="college_item">
+        <image src="/images/school/Index_img_a.png" class="college_pic"></image>
+        <view class="college_name">慕尼黑工业大学</view>
+        <view class="college_desc"> Technische Universität München (TUM)</view>
+      </view>
+
+    </van-tab>
+
+    <van-tab title="语言学校">
+      <view class="language">智能排序 <view class="language_item">口碑优选</view>
+        <view class="language_item">热门推荐</view>
+        <view class="language_item">点评最多</view>
+        <view class="language_item">提供考位</view>
+      </view>
+
+
+
+      <view class="college_item">
+        <image src="/images/school/Index_img_a.png" class="college_pic"></image>
+        <view class="college_name">慕尼黑工业大学</view>
+        <view class="college_desc"> Technische Universität München (TUM)</view>
+      </view>
+      <view class="college_item">
+        <image src="/images/school/Index_img_a.png" class="college_pic"></image>
+        <view class="college_name">慕尼黑工业大学</view>
+        <view class="college_desc"> Technische Universität München (TUM)</view>
+      </view>
+      <view class="college_item">
+        <image src="/images/school/Index_img_a.png" class="college_pic"></image>
+        <view class="college_name">慕尼黑工业大学</view>
+        <view class="college_desc"> Technische Universität München (TUM)</view>
+      </view>
+    </van-tab>
+
+
+
+
+
+  </van-tabs>
+
+</view>

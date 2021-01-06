@@ -1,0 +1,78 @@
+view .active_tab_11{
+  font-size: 35rpx;
+  font-weight: 800;
+}
+
+.article{
+  box-sizing: border-box;
+  padding-top: 30rpx;
+  border-bottom: 3px solid #f7f7f7
+}
+.article_title{
+  width: 100%;
+  font-weight: 900;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+.article_content{
+  letter-spacing: 0.7px;
+  width: 100%;
+  line-height: 40rpx;
+  margin-top: 20rpx;
+  color: #333333;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.article_info{
+  position: relative;
+  height: 74rpx;
+}
+
+.po{
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  margin-top: -17rpx;
+  color: #999999 ;
+  font-size: 24rpx;
+  line-height: 37rpx;
+}
+.van-image{
+position: absolute;
+top: 30%;
+margin-right: 20rpx;
+}
+.article_info_mark{
+  padding: 0 15rpx;
+  background: #FFB1B1 ;
+  line-height: 30rpx;
+  text-align: center;
+  color: white;
+  left: 450rpx;
+  margin-top: -15rpx;
+}
+.article_info_pinglun{
+  right: 0;
+}
+.van-loading {
+  width: 100%;
+  height: 100rpx;
+}
+
+.finish {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: var(--loading-text-color, #969799);
+  font-size: 17px;
+  text-align: center;
+}

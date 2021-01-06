@@ -1,0 +1,118 @@
+.content {
+  padding-top: 40rpx;
+}
+
+.userinfo {
+  height: 100rpx;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 30rpx;
+}
+
+.name {
+  position: absolute;
+  top: 10rpx;
+  line-height: 44rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #333333;
+  padding-left: 40rpx;
+  left: 100rpx;
+}
+
+.desc {
+  position: absolute;
+  top: 54rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #666666;
+  padding-left: 40rpx;
+  left: 100rpx;
+}
+
+.myzhuye {
+  position: absolute;
+  color: #666666;
+  right: 0;
+  top: 50%;
+  margin-top: -17rpx;
+  height: 34rpx;
+}
+
+.userinfo_pic {
+  height: 20rpx;
+  width: 20rpx;
+}
+
+.fans {
+  display: inline-block;
+  width: 150rpx;
+  height: 40rpx;
+  margin-right: 80rpx;
+  color: #333333;
+  font-size: 28rpx;
+}
+
+/* 中间部分 */
+.middle {
+  width: 100%;
+  display: flex;
+}
+
+.middle_item {
+  box-sizing: border-box;
+  padding-top: 50rpx;
+  flex: 1;
+  text-align: center;
+  color: #333333;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.van-icon {
+  margin-bottom: 20rpx;
+}
+
+.ad_pic {
+  margin-top: 40rpx;
+  width: 690rpx;
+  height: 140rpx;
+}
+
+/* 下面的内容 */
+.conlist {
+  margin-top: 50rpx;
+  position: relative;
+  height: 50rpx;
+  overflow: hidden;
+  padding-left: 10rpx;
+}
+
+.conlist_pic {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.conlist_txt {
+  position: absolute;
+  top: 3rpx;
+  left: 60rpx;
+  color: #333333;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.conlist_pic2 {
+  width: 25rpx;
+  height: 25rpx;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -13rpx;
+}
+
+.ct {
+  margin-top: 80rpx;
+}

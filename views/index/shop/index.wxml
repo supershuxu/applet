@@ -1,0 +1,43 @@
+<!--views/index/shop/index.wxml-->
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+
+<view class="content">
+  <view class="nav" >
+    <image src="/images/shop/1.png"></image>
+    <view>公证认证</view>
+  </view>
+  <view class="nav" >
+    <image src="/images/shop/2.png"></image>
+    <view>APS辅导</view>
+  </view> <view class="nav" >
+    <image src="/images/shop/3.png"></image>
+    <view>翻译文案</view>
+  </view> <view class="nav" >
+    <image src="/images/shop/4.png"></image>
+    <view>DHL代寄</view>
+  </view> <view class="nav" >
+    <image src="/images/shop/5.png"></image>
+    <view>德国语言班</view>
+  </view> <view class="nav" >
+    <image src="/images/shop/6.png"></image>
+    <view>签证服务</view>
+  </view> <view class="nav" >
+    <image src="/images/shop/7.png"></image>
+    <view>德国医保</view>
+  </view> <view class="nav" >
+    <image src="/images/shop/8.png"></image>
+    <view>境外接机</view>
+  </view> <view class="nav" >
+    <image src="/images/shop/9.png"></image>
+    <view>租房找房</view>
+  </view> <view class="nav" >
+    <image src="/images/shop/10.png"></image>
+    <view>其他</view>
+  </view>
+
+  <view class="AD"></view>
+
+</view>

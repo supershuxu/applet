@@ -1,0 +1,22 @@
+<!--views/huidawenti/index.wxml-->
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <view class="btn b2">发布</view>
+  <view class="btn " bindtap="goback">取消</view>
+</view>
+<view class="title">
+  {{title}}
+</view>
+<view class="content">
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    type="textarea"
+    placeholder="请填写回答"
+    autosize
+    border="{{ false }}"
+    bind:change="onChange"
+    size="large"
+  />
+</van-cell-group>
+</view>

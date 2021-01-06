@@ -1,0 +1,140 @@
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+
+<view class="content">
+  <van-tabs active="{{ active }}" bind:change="onChange" title-active-color="black" color="transparent"
+    tab-class="tabstyle" ellipsis="false" tab-active-class="active_tab_11">
+
+    <van-tab title="好友">
+
+      <view class="interested">可能感兴趣的朋友</view>
+      <view class="change">换一批</view>
+
+      <view class="cardweap">
+        <view class="card">
+          <van-image round width="68rpx" height="68rpx" src="/images/agent/Index_scholarship_bg.png" />
+          <view class="card_name">昵称</view>
+          <van-button round type="info" size="small" color="white"
+            custom-style="color:#666666  ;border: solid 1rpx #f5ebeb ;height:50rpx;width:120rpx">关注</van-button>
+          <image src="/images/error.png" class="card_pic"></image>
+        </view>
+        <view class="card">
+          <van-image round width="68rpx" height="68rpx" src="/images/agent/Index_scholarship_bg.png" />
+          <view class="card_name">昵称</view>
+          <van-button round type="info" size="small" color="white"
+            custom-style="color:#666666  ;border: solid 1rpx #f5ebeb ;height:50rpx;width:120rpx">关注</van-button>
+          <image src="/images/error.png" class="card_pic"></image>
+        </view>
+        <view class="card">
+          <van-image round width="68rpx" height="68rpx" src="/images/agent/Index_scholarship_bg.png" />
+          <view class="card_name">昵称</view>
+          <van-button round type="info" size="small" color="white"
+            custom-style="color:#666666  ;border: solid 1rpx #f5ebeb ;height:50rpx;width:120rpx">关注</van-button>
+          <image src="/images/error.png" class="card_pic"></image>
+        </view>
+        <view class="card">
+          <van-image round width="68rpx" height="68rpx" src="/images/agent/Index_scholarship_bg.png" />
+          <view class="card_name">昵称</view>
+          <van-button round type="info" size="small" color="white"
+            custom-style="color:#666666  ;border: solid 1rpx #f5ebeb ;height:50rpx;width:120rpx">关注</van-button>
+          <image src="/images/error.png" class="card_pic"></image>
+        </view>
+        <view class="card">
+          <van-image round width="68rpx" height="68rpx" src="/images/agent/Index_scholarship_bg.png" />
+          <view class="card_name">昵称</view>
+          <van-button round type="info" size="small" color="white"
+            custom-style="color:#666666  ;border: solid 1rpx #f5ebeb ;height:50rpx;width:120rpx">关注</van-button>
+          <image src="/images/error.png" class="card_pic"></image>
+        </view>
+      </view>
+
+      <view class="midcontent">
+        <view class="userinfo">
+          <van-image round width="72rpx" height="72rpx" src="/images/Index_index/index_pic_f.png" />
+          <view class="name">昵称昵称</view>
+          <view class="desc">简介</view>
+          <view class="myzhuye">...
+          </view>
+          <view class="article">
+            <view class="article_title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+            <view class="article_content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+            </view>
+            <view class="article_info">
+              <view class="article_info_name po">2小时前</view>
+              <view class="article_info_mark po">
+                <van-icon name="like-o" />125</view>
+              <view class="article_info_pinglun po">
+                <van-icon name="comment-o" />125</view>
+            </view>
+          </view>
+        </view>
+        <view class="userinfo">
+          <van-image round width="72rpx" height="72rpx" src="/images/Index_index/index_pic_f.png" />
+          <view class="name">昵称昵称</view>
+          <view class="desc">简介</view>
+          <view class="myzhuye">...
+          </view>
+          <view class="article">
+            <view class="article_title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+            <view class="article_content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+            </view>
+            <view class="article_info">
+              <view class="article_info_name po">2小时前</view>
+              <view class="article_info_mark po">
+                <van-icon name="like-o" />125</view>
+              <view class="article_info_pinglun po">
+                <van-icon name="comment-o" />125</view>
+            </view>
+          </view>
+        </view>
+        <view class="userinfo">
+          <van-image round width="72rpx" height="72rpx" src="/images/Index_index/index_pic_f.png" />
+          <view class="name">昵称昵称</view>
+          <view class="desc">简介</view>
+          <view class="myzhuye">...
+          </view>
+          <view class="article">
+            <view class="article_title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+            <view class="article_content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+            </view>
+            <view class="article_info">
+              <view class="article_info_name po">2小时前</view>
+              <view class="article_info_mark po">
+                <van-icon name="like-o" />125</view>
+              <view class="article_info_pinglun po">
+                <van-icon name="comment-o" />125</view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+
+
+
+
+    </van-tab>
+
+
+
+
+    <van-tab title="推荐">
+      <view class="article" wx:for="{{questionList}}" wx:key="id" bindtap="answerDetail" data-id="{{item.id}}">
+        <view class="article_title">{{item.title}}</view >
+        <view class="article_content">{{item.mess.content}}</view>
+        <view class="article_info">
+          <van-image custom-class="article_info_pic" round wx:if="{{item.mess.user.avatar}}" width="34rpx"
+            height="34rpx" src="https://liudediy.com/liude/images/pics_modle_46.png" />
+          <van-image custom-class="article_info_pic" round wx:else width="34rpx" height="34rpx"
+            src="https://liudediy.com/liude/images/pics_modle_46.png" />
+          <view class="article_info_name po">{{item.user}} {{item.time}}</view>
+          <view class="article_info_mark po po2">{{item.ban}}</view>
+          <view class="article_info_pinglun po">0评论</view>
+        </view>
+      </view>
+      <van-loading size="50rpx" text-size="35rpx" custom-class="loading" wx:if="{{showloading}}">加载中...</van-loading>
+      <view class="finish" wx:if="{{showfinish}}">没有更多数据了...</view>
+    </van-tab>
+  </van-tabs>
+</view>

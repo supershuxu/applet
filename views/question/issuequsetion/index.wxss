@@ -1,0 +1,51 @@
+
+.content{
+  padding: 0;
+  width: 100%;
+}
+.btn{
+position: absolute;
+right: 160rpx;
+  text-align: center;
+  width: 15%;
+  float: right;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-family: PingFangSC-Regular;
+font-size: 14px;
+color: #2C6FCE;
+letter-spacing: 0;
+top: 28rpx;
+
+}
+.b2{
+  background-image: linear-gradient(45deg, #2B69C8 0%, #3197F9 100%);
+border-radius: 12px;
+color: white;
+right:30rpx ;
+}
+.midcon{
+  min-height: 500rpx;
+  border-bottom: 2rpx solid #EEEEEE;
+}
+
+
+view .van-dropdown-menu {
+  height: 80rpx;
+  border-top: 1px solid #F7F7F7;
+  margin-bottom: 60rpx;
+}
+
+view .van-dropdown-menu__item {
+  height: 80rpx;
+}
+
+view .van-dropdown-menu__title {
+  padding: 0 20rpx 0 0;
+  font-family: PingFangSC-Regular;
+  color: #333333;
+  letter-spacing: 0.43px;
+}
+
+
+

@@ -1,0 +1,83 @@
+ {
+   "pages": [
+     "pages/index/index",
+     "pages/focus/index",
+     "pages/question/index",
+     "pages/answer/index",
+     "pages/mine/index",
+
+
+
+     "views/answerdetail/index",
+     "views/huidawenti/index",
+     "views/txtdetail/index",
+     "views/login/index",
+
+
+     "views/index/school/index",
+     "views/index/school/ranking/index",
+
+
+     "views/index/Germanstudy/index",
+     "views/index/silkbag/index",
+     "views/index/aps/index",
+     "views/index/activity/index",
+     "views/index/project/index",
+     "views/index/shop/index",
+     "views/index/strategy/index",
+
+
+     "views/question/issuequsetion/index",
+     "views/question/issuearticle/index"
+
+
+
+   ],
+   "tabBar": {
+     "list": [{
+       "pagePath": "pages/index/index",
+       "iconPath": "./images/Index_index/footd1.png",
+       "selectedIconPath": "./images/Index_index/footd2.png",
+       "text": "首页"
+     }, {
+       "pagePath": "pages/focus/index",
+       "iconPath": "./images/Index_index/footb1.png",
+       "selectedIconPath": "./images/Index_index/footb2.png",
+       "text": "关注"
+     }, {
+       "pagePath": "pages/question/index",
+       "iconPath": "./images/Index_index/jia.png",
+       "selectedIconPath": "./images/Index_index/jia.png"
+
+     }, {
+       "pagePath": "pages/answer/index",
+       "iconPath": "./images/Index_index/footc1.png",
+       "selectedIconPath": "./images/Index_index/footc2.png",
+       "text": "问答"
+     }, {
+       "pagePath": "pages/mine/index",
+       "iconPath": "./images/Index_index/foota1.png",
+       "selectedIconPath": "./images/Index_index/foota2.png",
+       "text": "我的"
+     }],
+     "selectedColor": "#0e70b6"
+   },
+   "window": {
+     "navigationBarBackgroundColor": "#ffffff",
+     "navigationBarTextStyle": "black",
+     "backgroundColor": "#eeeeee",
+     "backgroundTextStyle": "light"
+
+   },
+   "usingComponents": {
+     "van-tab": "@vant/weapp/tab/index",
+     "van-tabs": "@vant/weapp/tabs/index"
+   },
+   "sitemapLocation": "sitemap13.json",
+   "plugins": {
+     "wxparserPlugin": {
+       "version": "0.3.1",
+       "provider": "wx9d4d4ffa781ff3ac"
+     }
+   }
+ }

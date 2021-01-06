@@ -1,0 +1,12 @@
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+
+
+<view class="content">
+  <view class="wrap">
+<view class="question" bindtap="goissuequestion"><van-icon name="question-o" /> 发布问题 </view></view>
+<view class="wrap wrap2">
+<view class="article"  bindtap="goissuearticle"><van-icon name="records" /> 发布文章</view>
+</view></view>

@@ -1,0 +1,59 @@
+<!--views/index/school/ranking/index.wxml-->
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+<view class="content">
+  <van-tabs active="{{ active }}" title-active-color="#3197F9" color="transparent" ellipsis="{{false}}"
+    tab-class="active_tab" bind:change="onChange">
+    <van-tab wx:for="{{list}}" wx:key="index" title=" {{item}}">
+      <van-dropdown-menu active-color="#3197F9">
+        <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+      </van-dropdown-menu>
+
+
+      <view class="school">
+        <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+        <view class="school_name">慕尼黑工业大学</view>
+        <view class="school_desc">Technische Universität…</view>
+        <view class="school_ranking one">01</view>
+      </view>
+
+
+
+      <view class="school">
+        <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+        <view class="school_name">慕尼黑工业大学</view>
+        <view class="school_desc">Technische Universität…</view>
+        <view class="school_ranking two">01</view>
+      </view>
+
+
+
+      <view class="school">
+        <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+        <view class="school_name">慕尼黑工业大学</view>
+        <view class="school_desc">Technische Universität…</view>
+        <view class="school_ranking three">01</view>
+      </view>
+
+      <view class="school">
+        <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+        <view class="school_name">慕尼黑工业大学</view>
+        <view class="school_desc">Technische Universität…</view>
+        <view class="school_ranking">01</view>
+      </view>
+
+
+
+      <view class="school">
+        <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+        <view class="school_name">慕尼黑工业大学</view>
+        <view class="school_desc">Technische Universität…</view>
+        <view class="school_ranking">01</view>
+      </view>
+
+
+    </van-tab>
+  </van-tabs>
+</view>

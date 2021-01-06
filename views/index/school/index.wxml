@@ -1,0 +1,145 @@
+<!--views/index/school/index.wxml-->
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+<view class="content">
+  <van-search value="{{ value }}" shape="round" input-align="center" bind:change="onChange" placeholder="搜索院校或专业关键词">
+  </van-search>
+
+  <view class="ADleft" bindtap="goranking">
+    <image src="/images/school/cilun (6).png" class="ad_pic"></image>
+    <view class="txt_title">德国大学排名</view>
+  </view>
+  <view class="ADright">
+    <image src="/images/school/cilun (1).png" class="ad_pic"></image>
+    <view class="txt_title">德国小工具</view>
+  </view>
+
+  <view class="title">语言学校 <view class="more">更多</view>
+  </view>
+
+  <view class="Language_school_list">
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+  </view>
+
+  <van-tabs active="{{ active }}" bind:change="Change" title-active-color="black" color="transparent"
+    title-inactive-color="#333333" tab-class="tabstyle" tab-active-class="active_tab_11">
+    <van-tab title="院校推荐">
+      <view data-num="1" data-name="" class="label_item {{_num == 1 ? 'active' : ''}}" bindtap="handleNav">
+        精英大学Elite-Uni
+      </view>
+      <view data-num="2" class="label_item {{_num == 2 ? 'active' : ''}}" bindtap="handleNav">
+        理工联盟TU9
+      </view>
+      <view data-num="3" class="label_item {{_num == 3 ? 'active' : ''}}" bindtap="handleNav">
+        普通大学Uni
+      </view>
+      <view data-num="4" class="label_item {{_num == 4 ? 'active' : ''}}" bindtap="handleNav">
+        应用技术大学FH
+      </view>
+      <view data-num="5" class="label_item bot {{_num == 5 ? 'active' : ''}}" bindtap="handleNav">
+        艺术院校Kunst
+      </view>
+      <view data-num="6" class="label_item bot {{_num == 6 ? 'active' : ''}}" bindtap="handleNav">
+        商学院
+      </view>
+
+      <view class="college_item">
+        <image src="/images/school/Index_img_a.png" class="college_pic"></image>
+        <view class="college_name">慕尼黑工业大学</view>
+        <view class="college_desc"> Technische Universität München (TUM)</view>
+        <view class="college_wrap">
+          <view class="college_strategy">
+            <image class="college_strategy_pic" src="/images/school/zhuanshi.png"></image>
+            <view class="college_strategy_num"> 73专业</view>
+          </view>
+          <view class="college_strategy">
+            <image class="college_strategy_pic" src="/images/school/wenzhang.png"></image>
+            <view class="college_strategy_num"> 73专业</view>
+          </view>
+          <view class="college_strategy">
+            <image class="college_strategy_pic" src="/images/school/duihao.png"></image>
+            <view class="college_strategy_num"> 73专业</view>
+          </view>
+        </view>
+      </view>
+    </van-tab>
+
+    <van-tab title="热门专业">
+      <view class="degree">毕业学位 : <view class="degree_item">所有</view>
+        <view class="degree_item">本科</view>
+        <view class="degree_item">硕士</view>
+        <view class="degree_item">本硕</view>
+        <view class="degree_item">国考</view>
+      </view>
+      <view class="language">授课语言 : <view class="language_item">所有授课</view>
+        <view class="language_item">英语授课</view>
+        <view class="language_item">德语授课</view>
+        <view class="language_item">英德双语</view>
+      </view>
+
+      <view class="weap">
+        <view class="IconName"> 数字媒体应用技术
+          <view class="btn">一键申请</view>
+        </view>
+        <view class="IconName_deyi">Maschinenbau</view>
+        <view class="remark_user">
+          <van-image round width="44rpx" height="44rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+          <view class="remark_txt t1">
+            卡尔斯鲁厄理工学院
+          </view>
+          <view class="remark_txt t2">
+            硕士
+          </view>
+          <view class="remark_txt t3">
+            英语授课
+          </view>
+          <view class="remark_txt t4">机械专业Nr.1</view>
+        </view>
+      </view>
+      <view class="weap">
+        <view class="IconName"> 数字媒体应用技术
+          <view class="btn">一键申请</view>
+        </view>
+        <view class="IconName_deyi">Maschinenbau</view>
+        <view class="remark_user">
+          <van-image round width="44rpx" height="44rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+          <view class="remark_txt t1">
+            卡尔斯鲁厄理工学院
+          </view>
+          <view class="remark_txt t2">
+            硕士
+          </view>
+          <view class="remark_txt t3">
+            英语授课
+          </view>
+          <view class="remark_txt t4">机械专业Nr.1</view>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

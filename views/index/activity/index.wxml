@@ -1,0 +1,84 @@
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+<view class="content">
+  <van-search value="{{ value }}" shape="round" input-align="center" bind:change="onChange" placeholder="搜索关键词">
+  </van-search>
+  <view class="title">本月推荐</view>
+
+  <view class="wrap">
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+    <view class="school_item">
+      <image src="/images/school/Index_img_a.png" class="school_pic"></image>
+      <view class="school_name">
+        西交康桥国际语言中心
+      </view>
+    </view>
+  </view>
+  <view class="title">同城活动</view>
+  <view class="assist">
+    <image src="/images/skilbag/5b4462f31bcaf.jpg" class="assist_pic"></image>
+    <view class="assist_name">德语专业APS辅导德语专业APS辅导德语专业APS辅导</view>
+    <view class="assist_class">
+      <view class="pic_wrap">
+        <image src="/images/school/Index_img_a.png" class="assist_name_pic"></image>
+      </view> 德语类
+    </view>
+    <view class="assist_price">¥500/课时</view>
+  </view>
+  <view class="assist">
+    <image src="/images/skilbag/5b4462f31bcaf.jpg" class="assist_pic"></image>
+    <view class="assist_name">德语专业APS辅导德语专业APS辅导德语专业APS辅导</view>
+    <view class="assist_class">
+      <view class="pic_wrap">
+        <image src="/images/school/Index_img_a.png" class="assist_name_pic"></image>
+      </view> 德语类
+    </view>
+    <view class="assist_price">¥500/课时</view>
+  </view>
+  <view class="assist">
+    <image src="/images/skilbag/5b4462f31bcaf.jpg" class="assist_pic"></image>
+    <view class="assist_name">德语专业APS辅导德语专业APS辅导德语专业APS辅导</view>
+    <view class="assist_class">
+      <view class="pic_wrap">
+        <image src="/images/school/Index_img_a.png" class="assist_name_pic"></image>
+      </view> 德语类
+    </view>
+    <view class="assist_price">¥500/课时</view>
+  </view>
+  <view class="assist">
+    <image src="/images/skilbag/5b4462f31bcaf.jpg" class="assist_pic"></image>
+    <view class="assist_name">德语专业APS辅导德语专业APS辅导德语专业APS辅导</view>
+    <view class="assist_class">
+      <view class="pic_wrap">
+        <image src="/images/school/Index_img_a.png" class="assist_name_pic"></image>
+      </view> 德语类
+    </view>
+    <view class="assist_price">¥500/课时</view>
+  </view>
+
+</view>

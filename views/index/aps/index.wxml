@@ -1,0 +1,47 @@
+<view class="header">
+  <image class="logo" src="/images/Index_logo.png"></image>
+  <image class="sousuo" src="/images/sousuo.png"></image>
+</view>
+<view class="content">
+  <van-search value="{{ value }}" shape="round" input-align="center" bind:change="onChange" placeholder="搜索关键词">
+  </van-search>
+  <view class="top_left">
+    <view class="top_left_con">
+      工业设计 北京 893 01.16</view>
+  </view>
+  <view class="top_right">原海报样式</view>
+
+  <view class="title">审核资料</view>
+
+  <view class="wrap">
+    <view class="audit_data"></view>
+    <view class="audit_data"></view>
+    <view class="audit_data"></view>
+    <view class="audit_data"></view>
+    <view class="audit_data"></view>
+  </view>
+  <view class="title">辅导推荐</view>
+  <view class="assist">
+    <image src="/images/skilbag/5b4462f31bcaf.jpg" class="assist_pic"></image>
+    <view class="assist_name">德语专业APS辅导</view>
+    <view class="assist_class">德语类</view>
+    <view class="assist_price">¥500/课时</view>
+  </view>
+  <view class="assist">
+    <image src="/images/skilbag/5b4462f31bcaf.jpg" class="assist_pic"></image>
+    <view class="assist_name">德语专业APS辅导</view>
+    <view class="assist_class">德语类</view>
+    <view class="assist_price">¥500/课时</view>
+  </view><view class="assist">
+    <image src="/images/skilbag/5b4462f31bcaf.jpg" class="assist_pic"></image>
+    <view class="assist_name">德语专业APS辅导</view>
+    <view class="assist_class">德语类</view>
+    <view class="assist_price">¥500/课时</view>
+  </view><view class="assist">
+    <image src="/images/skilbag/5b4462f31bcaf.jpg" class="assist_pic"></image>
+    <view class="assist_name">德语专业APS辅导</view>
+    <view class="assist_class">德语类</view>
+    <view class="assist_price">¥500/课时</view>
+  </view>
+
+</view>
